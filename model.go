@@ -15,16 +15,3 @@ type SomeRes1 struct {
 	C  int64     `json:"c"`
 	V1 string    `json:"v1"`
 }
-
-type SomeReq2 struct {
-	A  string    `json:"a"`
-	B  time.Time `json:"b"`
-	C  int64     `json:"c"`
-	V2 string    `json:"v2"`
-}
-type SomeRes2 struct {
-	A  string    `json:"a"`
-	B  time.Time `json:"b"`
-	C  int64     `json:"c"`
-	V2 string    `json:"v2"`
-}
