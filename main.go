@@ -12,8 +12,8 @@ import (
 	"gorm.io/gorm"
 )
 
-func BizLogic1(ctx context.Context, in *SomeReq1) (out *SomeRes1, err error) {
-	out = new(SomeRes1)
+func BizLogic1(ctx context.Context, in SomeReq1) (out SomeRes1, err error) {
+	out = SomeRes1{}
 	out.A = in.A
 	out.B = in.B
 	out.C = in.C

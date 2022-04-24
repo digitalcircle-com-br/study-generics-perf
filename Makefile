@@ -14,3 +14,9 @@ run:
 .PHONY: pprof
 pprof:
 	go tool pprof -http=:8060  pprof
+
+asm_generics:
+	GOOS=linux GOARCH=amd64 go tool compile -S asm/generics/main.go
+
+asm_ifcae:
+	GOOS=linux GOARCH=amd64 go tool compile -S asm/iface/main.go
